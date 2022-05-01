@@ -1,13 +1,11 @@
-import { relationship, text } from '@keystone-next/fields';
+import { integer, text } from '@keystone-next/fields';
 import { list } from '@keystone-next/keystone/schema';
 
 export const Country = list({
   fields: {
-    country_name: text({ isRequired: true, isUnique: true }),
-    country_data: relationship({
-      ref: 'Emission',
-      many: true,
-      defaultValue: null,
-    }),
+    country_name: text({ isRequired: true }),
+    year: integer({ isRequired: true }),
+    category: text({ isRequired: true }),
+    emission: text({ isRequired: true }),
   },
 });

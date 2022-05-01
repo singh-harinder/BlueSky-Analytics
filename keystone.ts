@@ -7,9 +7,6 @@ import {
 } from '@keystone-next/keystone/session';
 import { User } from './schemas/User';
 import { Country } from './schemas/Country';
-import { Emission } from './schemas/Emission';
-
-import { insertSeedData } from './seed_data';
 
 const databaseURL = process.env.DATABASE_URL;
 
@@ -38,24 +35,21 @@ export default withAuth(
     db: {
       adapter: 'mongoose',
       url: databaseURL,
-      async onConnect(keystone) {
-        console.log('Connected to the database');
-        if (process.argv.includes('--seed-data')) {
-          await insertSeedData(keystone);
-        }
-      },
+      // Initial Data Seeding
+      // async onConnect(keystone) {
+      //   console.log('Connected to the database');
+      //   if (process.argv.includes('--seed-data')) {
+      //     await insertSeedData(keystone);
+      //   }
+      // },
     },
     lists: createSchema({
       User,
       Country,
-      Emission,
     }),
     ui: {
       isAccessAllowed: ({ session }) => {
-        if (
-          session?.data?.isAdmin ||
-          session?.data?.email === 'admin@bluesky.com'
-        ) {
+        if (session?.data?.isAdmin) {
           return true;
         }
       },
