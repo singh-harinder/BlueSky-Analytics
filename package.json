@@ -6,8 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "keystone-next",
-    "start": "keystone-next start",
-    "build": "keystone-next build"
+    "build": "keystone-next build",
+    "start": "keystone-next build && keystone-next start port=5000"
   },
   "eslintConfig": {
     "extends": "wesbos/typescript.js",

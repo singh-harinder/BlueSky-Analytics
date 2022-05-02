@@ -1,0 +1,12 @@
+version: '3'
+services:
+  bluesky-backend:
+    build: .
+    ports:
+      - '5000:5000'
+    volumes:
+      - ./:/app
+      - /app/node_modules
+    environment:
+      - COOKIE_SECRET=${COOKIE_SECRET}
+      - DATABASE_URL=${DATABASE_URL}
