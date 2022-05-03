@@ -47,6 +47,25 @@ You can easily sort the results in any order you want
 
 You can place constraits on any factor, country_name, emission, category and year.
 
+### Categories Schema 
+Following are the categories and their keys in the database.
+
+- **CO2** : _carbon_dioxide_co2_emissions_without_land_use_land_use_change_and_forestry_lulucf_in_kilotonne_co2_equivalent_
+- **GHGS_CO2** : _greenhouse_gas_ghgs_emissions_including_indirect_co2_without_lulucf_in_kilotonne_co2_equivalent_
+- **GHGS** : _greenhouse_gas_ghgs_emissions_without_land_use_land_use_change_and_forestry_lulucf_in_kilotonne_co2_equivalent_
+- **HFCS** : _hydrofluorocarbons_hfcs_emissions_in_kilotonne_co2_equivalent_
+- **CH4** : _methane_ch4_emissions_without_land_use_land_use_change_and_forestry_lulucf_in_kilotonne_co2_equivalent_
+- **NF3** : _nitrogen_trifluoride_nf3_emissions_in_kilotonne_co2_equivalent_
+- **N2O** : _nitrous_oxide_n2o_emissions_without_land_use_land_use_change_and_forestry_lulucf_in_kilotonne_co2_equivalent_
+- **PFCS** : _perfluorocarbons_pfcs_emissions_in_kilotonne_co2_equivalent_
+- **SF6** : _sulphur_hexafluoride_sf6_emissions_in_kilotonne_co2_equivalent_
+- **HFCS_PFCS** : _unspecified_mix_of_hydrofluorocarbons_hfcs_and_perfluorocarbons_pfcs_emissions_in_kilotonne_co2_equivalent_
+
+
+
+
+
+
 <br/>
 <br/>
 
