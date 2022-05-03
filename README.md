@@ -18,7 +18,7 @@ You will be directed to the API Explorer.
 
 <br/>
 <br/>
-Out of the box API supports **query** , **mutation** , **fragment** and **subscription**. For this assignment we are concerned with query only.
+Out of the box API supports __query__ , __mutation__ , __fragment__ and __subscription__. For this assignment we are concerned with query only.
 
 You can query the available schemas using Graphql syntax. There are loads of query parameters and options available to you. You can nest as much as you want.
 
